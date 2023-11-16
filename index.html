@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/png" sizes="16x16" href="media/favicon.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="I'm Andrew Axentev, a skilled web developer offering top-notch web development solutions. Explore my journey, skills, and achievements. Let's create stunning and functional web experiences together">
+  <meta name="keywords" content="Web development, Web developer, Front-end development, Back-end development, Full-stack development, Programming, HTML, CSS, JavaScript, Responsive design, User experience, Web design, Web technologies, Frameworks, API integration, Mobile development, Web performance optimization, Portfolio showcasing">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style_main.css" rel="stylesheet">
+  <title>Easy Breezy: NEED A QUALITY WEB DEVELOPMENT SPECIALIST?</title>
+
+</head>
+
+<!--
+            Project 16: Newsletter Sign Up Form
+            Requirements:
+            1. Begin with the Newsletter sign up form developed locally in Day 2, Lesson 1 Defending against XSS.
+            2. Add a phone number field to your Newsletter Signup form.
+            3. Use maxlength attribute to further restrict user inputs.
+            4. Create a JavaScript function to retrieve the phone number input from the user.
+            5. Check that the phone number input is not blank.
+            6. Check that the phone number contains only numbers and dashes.
+            7. If there are any issues with the phone number field, prepare an error message for the user.
+            8. If there are no problems with the phone number input, sanitize it before submitting the form.
+-->
+
+<body>
+
+  <!-- Header -->
+  <header>
+
+    <table class="table_brown_top">
+      <tr>
+        <td width="400" height="50">
+
+          <div class="combined-container">
+            <div class="animated-object"></div>
+            <div class="animated-image"></div>
+          </div>
+
+        </td>
+        <td width="490" class="td_middle_right">
+
+          <p class="main_orange">
+
+            <a href="index.html" class="over_bootstrap_link">HOME </a>|
+            <a href="about-us.html" class="over_bootstrap_link">ABOUT ME </a>|
+            <a href="products/single-products.html" class="over_bootstrap_link">PROJECTS </a>|
+            <a href="#why-me" class="over_bootstrap_link">WHY ME? </a>|
+            <a href="#reviews" class="over_bootstrap_link">REVIEWS </a>|
+            <a href="contact-us.html" class="over_bootstrap_link">CONTACT ME</a>
+
+          </p>
+
+        </td>
+        <td width="10"></td>
+      </tr>
+    </table>
+
+    <table class="table_its_me">
+      <tr>
+        <td width="861" colspan="3"></td>
+        <td width="184"></td>
+        <td width="184"></td>
+        <td width="184"></td>
+        <td width="184"></td>
+      </tr>
+      <tr>
+        <td colspan="4" class="paddind_title">
+
+          <h1><br>NEED A QUALITY<br>WEB DEVELOPMENT <br>SPECIALIST?<br></h1>
+
+          <p class="sub_title"><br>I'm a skilled web developer offering my services as a professional for companies seeking top-notch web development solutions. Here, you can learn all about me, my journey, and the advantages of having me on your team.<br>Let's create stunning and functional web experiences together!</p>
+          <br>
+          <p><button class="button_invite" id="invite" value="Click Me!">INVITE TO THE TEAM</button>
+            <script>
+              var button = document.getElementById("invite");
+              button.addEventListener("click", function() {
+                var link = "https://t.me/andreyaksentyev";
+                window.open(link, "_blank");
+              });
+            </script>
+
+          </p>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td class="padding_25">
+          <a href="https://www.linkedin.com/in/andrew-axentev" class="social-linkedin-link"></a>
+          <a href="https://www.facebook.com/andrey.aksentyev" class="social-facebook-link"></a>
+          <a href="https://t.me/andreyaksentyev" class="social-telegram-link"></a>
+
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+    </table>
+  </header>
+
+  <!-- main -->
+
+  <main>
+
+    <!-- WHO AM I -->
+
+    <table class="table_brown_first_part">
+      <tr>
+        <td class="brown_background_top"></td>
+      </tr>
+      <tr>
+        <td height="38"></td>
+      </tr>
+      <tr>
+        <td height="100">
+
+          <div id="who-am-i">
+            <div class="wrap">
+              <div class="element-animation">
+                <span>
+                  <h2 class="title_orange">
+                    WHO AM I?
+                  </h2>
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </td>
+      </tr>
+    </table>
+
+    <!-- FLEXBOX -->
+
+    <div class="flex-container">
+      <div class="flex-item-picture"><img src="https://i.ibb.co/K0STCbh/me-cartoon4-1.png" alt="It’s me"></div>
+      <div class="flex-item-text">
+        <p class="main_bubble">Hello! I'm Andrew Axentev.<br>
+          I work for the world's largest company, <a href="https://www.amazon.com/" class="over_bootstrap_link">Amazon</a>, while also studying web development at <a href="https://www.correlation-one.com/" class="over_bootstrap_link">Correletion One</a>. I have experience in website development and working with various applications. Video editing is my hobby. On this website, you can explore my <a href="products/single-products.html" class="over_bootstrap_link">PROJECTS</a> and works, personal achievement</p>
+      </div>
+      <div class="flex-item-picture"> <img src="https://i.ibb.co/jbvqgh9/me-cartoon4-2.png" alt="It’s me"></div>
+      <div class="flex-item-text">
+        <p class="main_bubble">Explore the various sections<br>of the website. In section <a href="#my-path" class="over_bootstrap_link">MY PATH</a> I'll share my professional journey, my education at Correletion One. You'll learn about how I achieved my goals and developed as a skilled professional. In <a href="#why-me" class="over_bootstrap_link">WHY ME?</a> I'll explain my unique skills as a web developer and video editor and why I can be an interesting candidate for your projects and tasks. You can find reviews and recommendations from my clients and colleagues about my work in <a href="#reviews" class="over_bootstrap_link">REVIEWS</a> section. It will give you insights into my reliability and professionalism</p>
+      </div>
+      <div class="flex-item-picture"><img src="https://i.ibb.co/D9fcxDW/me-cartoon4-3.png" alt="It’s me"></div>
+      <div class="flex-item-text">
+        <p class="main_bubble">If you have any questions or want to discuss collaboration opportunities, feel free to reach out to me through <a href="#request" class="over_bootstrap_link">CONTACT</a>. I'm always open to new projects and possibilities!</p>
+      </div>
+    </div>
+
+    <table class="table_brown_first_part">
+      <tr>
+        <td class="brown_background_down"></td>
+      </tr>
+    </table>
+
+    <!-- MY PATH -->
+
+    <table class="table_white_1">
+
+      <tr>
+        <td height="100"></td>
+      </tr>
+      <tr>
+        <td height="100">
+
+          <div id="my-path">
+            <div class="wrap">
+              <div class="element-animation">
+                <span>
+                  <h2 class="title_black">
+                    MY PATH
+                  </h2>
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </td>
+      </tr>
+
+    </table>
+
+    <!-- GRID -->
+    <div class="grid-container2">
+      <!-- STEPS -->
+      <div class="item">
+        <p class="steps">&#9312;</p>
+      </div>
+      <div class="item">
+        <p class="steps">&#9313;</p>
+      </div>
+      <div class="item">
+        <p class="steps">&#9314;</p>
+      </div>
+      <div class="item">
+        <p class="steps">&#9315;</p>
+      </div>
+      <div class="item">
+        <p class="steps">&#9316;</p>
+      </div>
+
+      <!-- PROGRESS BAR -->
+      <div class="full-width-row2">
+        <div class="progress" style="height: 40px;">
+          <div class="progress-bar custom-color progress-bar-striped progress-bar-animated" style="width: 39%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <p class="main_progress">39%</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DESCRIPTION -->
+      <div class="item">
+        <p class="main_bold">Learned the Basics of HTML and CSS</p>
+        <p>Started with HTML to create the structure of web pages. Learned CSS to style the HTML elements and make the pages visually appealing</p>
+      </div>
+      <div class="item">
+        <p class="main_bold">JavaScript Fundamentals</p>
+        <p>Learned the basics of JavaScript, which added interactivity to web pages. Understood concepts like variables, functions, conditionals, loops, etc</p>
+      </div>
+      <div class="item">
+
+        <p class="main_bold">Back-End Development</p>
+        <p>Learned a server-side programming language</p>
+
+      </div>
+
+      <div class="item">
+
+        <p class="main_bold">APIs and Web Services</p>
+        <p>Learned how to work with APIs (Application Programming Interfaces) to fetch data and integrate with external services</p>
+      </div>
+      <div class="item">
+        <p class="main_bold">Full-Stack Development</p>
+        <p>Combined front-end and back-end skills to become a full-stack developer</p>
+      </div>
+    </div>
+
+    <!-- WHY ME -->
+
+    <table class="table_brown">
+      <tr>
+        <td colspan="5" class="brown_background_top"></td>
+      </tr>
+      <tr>
+        <td colspan="5" height="38"></td>
+      </tr>
+
+      <tr>
+        <td colspan="5" height="100">
+
+          <div id="why-me">
+            <div class="wrap">
+              <div class="element-animation">
+                <span>
+                  <h2 class="title_orange">
+                    WHY ME?
+                  </h2>
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </td>
+      </tr>
+      <tr valign="top">
+        <td class="padding_medal_25"><img src="https://i.ibb.co/CQVht3j/medal1.png" alt="Continuous Learning">
+          <p class="main_bold_white">Continuous Learning</p>
+          <p class="main_white">A commitment to continuous learning to stay updated with the latest technologies and industry trends</p>
+        </td>
+        <td class="padding_medal_25"><img src="https://i.ibb.co/6nTNYCC/medal2.png" alt="Technical Proficiency">
+          <p class="main_bold_white">Technical Proficiency</p>
+          <p class="main_white">Proficiency in various web technologies, such as HTML, CSS</p>
+        </td>
+        <td class="padding_medal_25"><img src="https://i.ibb.co/bv6vrfM/medal3.png" alt="Attention to Details">
+          <p class="main_bold_white">Attention to Details</p>
+          <p class="main_white">A keen eye for detail to ensure the accuracy and quality of code and design</p>
+        </td>
+        <td class="padding_medal_25"><img src="https://i.ibb.co/NNtLtvh/medal4.png" alt="Creativity">
+          <p class="main_bold_white">Creativity</p>
+          <p class="main_white">Being creative in designing user interfaces and developing innovative solutions</p>
+        </td>
+        <td class="padding_medal_25"><img src="https://i.ibb.co/nzxwcst/medal5.png" alt="Collaboration">
+          <p class="main_bold_white">Collaboration</p>
+          <p class="main_white">Ability to work well in a team and effectively communicate with designers, developers, and other stakeholders</p>
+        </td>
+
+      </tr>
+      <tr>
+        <td colspan="5" class="brown_background_down"></td>
+      </tr>
+    </table>
+
+    <!-- REVIEWS -->
+
+    <table class="table_white_2">
+
+      <tr>
+        <td height="100"></td>
+      </tr>
+      <tr>
+        <td colspan="5" height="100">
+
+          <div id="reviews">
+            <div class="wrap">
+              <div class="element-animation">
+                <span>
+                  <h2 class="title_black">
+                    REVIEWS
+                  </h2>
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </td>
+      </tr>
+
+      <tr>
+        <td width="280"></td>
+        <td width="40">
+          <div class="slider-prev"><img src="https://i.ibb.co/NYrW5b8/arrow-left.png" alt="Swipe left"></div>
+        </td>
+
+        <td width="960">
+
+          <div class="slider-container">
+            <div class="slider">
+
+              <div class="slide">
+
+                <div class="left-column">
+
+                  <div class="slide_img">
+                    <img src="https://i.ibb.co/bvCGg3Z/Rayna-Powell2.png" alt="Rayna Powell">
+                  </div>
+                  <p class="main_bold">Rayna Powell</p>
+                  <p>Human Resources Partner<br>at Amazon JFK8</p>
+
+                </div>
+
+                <div class="right-column">
+
+                  <p>Andrew's hard work and dedication play a crucial role in our company's ongoing success, and we are grateful for Andrew's contributions. We are delighted to have Andrew as part of our team, and Andrew's hard work continues to inspire us all.</p>
+                </div>
+
+              </div> <!-- slide -->
+
+              <div class="slide">
+
+                <div class="left-column">
+
+                  <div class="slide_img">
+                    <img src="https://i.ibb.co/k9pTZtd/safarov.png" alt="Ravil Safarov">
+                  </div>
+                  <p class="main_bold">Ravil Safarov</p>
+                  <p>Chief Executive Officer<br>of Chemical-Technological Equipment Plant</p>
+
+                </div>
+
+                <div class="right-column">
+
+                  <p>Andrew is characterized by critical and constructive thinking, a comprehensive strategic approach to projects.</p>
+                </div>
+
+              </div> <!-- slide -->
+
+              <div class="slide">
+
+                <div class="left-column">
+
+                  <div class="slide_img">
+                    <img src="https://i.ibb.co/ZTNj7hR/Voloshin.png" alt="Nikolai Voloshin">
+                  </div>
+                  <p class="main_bold">Nikolai Voloshin</p>
+                  <p>Chief Executive Officer<br>of PROMKHIMAPPARAT</p>
+
+                </div>
+
+                <div class="right-column">
+
+                  <p>Andrew is distinguished by his competence, performance, achieved results in work and high potential.</p>
+                </div>
+
+              </div> <!-- slide -->
+
+            </div> <!-- slider -->
+
+          </div> <!-- slider-container -->
+        </td>
+
+        <td width="40">
+          <div class="slider-next"><img src="https://i.ibb.co/tHRHDqZ/arrow-right.png" alt="Swipe right"></div>
+        </td>
+        <td width="280"></td>
+
+      </tr>
+
+      <tr>
+        <td colspan="5">
+          <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+
+        </td>
+      </tr>
+
+    </table>
+
+    <!-- leave a request -->
+
+    <form action="example_action2.html" method="POST" id="contactForm">
+      <table class="table_brown">
+
+        <tr>
+          <td colspan="4" class="brown_background_top"></td>
+        </tr>
+        <tr>
+          <td colspan="4" height="38"></td>
+        </tr>
+        <tr>
+          <td colspan="4" height="100">
+            <div id="request">
+              <p class="request_title_white">Leave a request for an invitation to an interview</p>
+            </div>
+            <p class="request_title_orange">I will contact you and we will agree on the exact date and time of the interview</p>
+
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" height="25" class="td_center">
+            <div class="success" id="successMessage">Form submitted successfully!</div>
+          </td>
+        </tr>
+        <tr valign="top" height="50">
+
+          <td width="500">
+          </td>
+
+          <td align="left" width="300">
+            <label for="name">
+              <p class="main_bold_white">Your name:</p>
+            </label>
+            <input type="text" id="name" name="name" placeholder="Your name" pattern="^[A-Za-z\s]+$" required>
+          </td>
+
+          <td align="left" class="padding-left-right" width="300">
+            <label for="cname">
+              <p class="main_bold_white">Company name:</p>
+            </label>
+            <input type="text" id="cname" name="company" placeholder="Company name" pattern="^[A-Za-z\s\d]+$" required>
+          </td>
+
+          <td width="500">
+          </td>
+
+        </tr>
+
+        <tr valign="top" height="25">
+
+          <td width="500">
+          </td>
+
+          <td align="left" width="300">
+            <div class="error-message" id="nameError">Enter your name</div>
+          </td>
+
+          <td align="left" class="padding-left-right" width="300">
+            <div class="error-message" id="companyError">Enter the correct name</div>
+          </td>
+
+          <td width="500">
+          </td>
+
+        </tr>
+
+        <tr height="50">
+
+          <td width="500">
+          </td>
+
+          <td align="left" width="300">
+            <label for="phonenum">
+              <p class="main_bold_white">Phone number:</p>
+            </label>
+            <input type="text" id="phonenum" name="phone" placeholder="+1 987-654-32-10" pattern="^\+\d{1,3} \d{3}-\d{3}-\d{2}-\d{2}$" required>
+
+          </td>
+
+          <td align="left" class="padding-left-right" width="300">
+            <label for="email">
+              <p class="main_bold_white">Your email:</p>
+            </label>
+            <input type="email" id="email" name="email" placeholder="name@domain.com" pattern="^\S+@\S+\.\S+$" required>
+          </td>
+
+          <td width="500">
+          </td>
+
+        </tr>
+
+        <tr valign="top" height="25">
+
+          <td width="500">
+          </td>
+
+          <td align="left" width="300">
+            <div class="error-message" id="phonenumError">The format is +1 987-654-32-10</div>
+          </td>
+
+          <td align="left" class="padding-left-right" width="300">
+            <div class="error-message" id="emailError">Enter the correct email</div>
+          </td>
+
+          <td width="500">
+          </td>
+
+        </tr>
+
+        <tr valign="top">
+
+          <td width="600">
+          </td>
+
+          <td colspan="2" align="left">
+            <p class="main_bold_white">
+              <label for="agree">
+                <input type="checkbox" id="agree" required>
+                I agree to the processing of my personal data
+              </label>
+            </p>
+
+          </td>
+
+          <td width="500">
+          </td>
+
+        </tr>
+
+        <tr>
+          <td colspan="4" height="25" class="td_center">
+            <button type="submit" id="submit-button" disabled>INVITE FOR AN INTERVIEW</button><br><br>
+          </td>
+        </tr>
+
+      </table>
+    </form>
+
+  </main>
+
+  <!-- footer -->
+
+  <footer>
+
+    <table id="table_grey">
+      <tr>
+        <td class="padding-left-right">
+
+          <p class="footer">&#169; 2023, Andrew Axentev. All rights reserved<br>All statements and offers made on this website will be binding in the event of successful completion of the educational program at Correlation One, while some skills and knowledge mentioned are indicative and subject to the completion of the educational program</p>
+        </td>
+      </tr>
+    </table>
+
+  </footer>
+  <script src="javascript/script.js"></script>
+</body>
+
+</html>
