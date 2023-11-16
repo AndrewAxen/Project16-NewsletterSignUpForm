@@ -2,8 +2,6 @@
 
 ## Requirements:
 
-**Option One**
-
 1. Begin with the Newsletter sign up form developed locally in Day 2, Lesson 1 Defending against XSS.
 2. Add a phone number field to your Newsletter Signup form.
 3. Use maxlength attribute to further restrict user inputs.
